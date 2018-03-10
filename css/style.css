@@ -396,7 +396,7 @@ PRODUCTS SECTION
 ***********************/
 
 #products {
-	padding: 80px 0;
+	padding: 60px 0 80px;
 	text-align: center;
 }
 
@@ -415,7 +415,9 @@ PRODUCTS SECTION
 }
 
 #products .subtitle {
-	margin-top: 10px;
+	font-size: 16px;
+	color: #999;
+	margin-top: 0;
 }
 
 /**********************
