@@ -155,9 +155,19 @@ button > * {
     transform: scaleX(1);
 }
 
+.btn-default.white-black {
+	color: #ffffff;
+	background-color: rgba(0,0,0,.3);
+}
+
+.btn-default.white-black:hover {
+	color: #000000;
+}
+
 .btn-default.green-white {
 	color: #ffffff;
 	background-color: #56c553;
+
 }
 
 .btn-default.green-white:hover,
@@ -225,7 +235,7 @@ NAVIGATION
 
 #main-navigation .navbar-brand {
 	height: 53px;
-	padding: 11px 25px 9px;
+	padding: 9px 25px 11px;
 }
 
 #main-navigation .navbar-brand img {
@@ -351,10 +361,10 @@ HOME SECTION
 
 .carousel-caption {
 	padding: 0;
-	bottom: 50%;
-	-webkit-transform: translateY(50%);
-	-ms-transform: translateY(50%);
-	transform: translateY(50%);
+	bottom: 20%;
+	-webkit-transform: translateY(20%);
+	-ms-transform: translateY(20%);
+	transform: translateY(20%);
 }
 
 .carousel-caption p {
