@@ -409,100 +409,13 @@ PRODUCTS SECTION
 	margin-top: 30px;
 }
 
-#products .punchbox {
-	padding: 0;
-	color: #605f65;
-	text-align: center;
-	line-height: 1;
-}
-
-#products .punchline {
-	text-transform: none;
-	font-family: 'Lora', serif;
-	font-size: 15px;
-}
-
-#products .punchline span {
-	display: block;
-}
-
-#products .punchline span:nth-of-type(1) {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 33px;
-}
-
-#products .punchline span:nth-of-type(2) {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-size: 50px;
-	color: #f95353;
-	margin-top: 16px;
-}
-
-#products .punchline span:nth-of-type(3) {
-	font-size: 20px;
-	font-style: italic;
-	margin-top: 26px;
-}
-
 #products .products {
 	padding: 0;
 	margin-top: 30px;
-	background: #f7f7f7;
-	cursor: pointer;
-	-moz-transition: background 0.3s ease-in-out;
-	-webkit-transition: background 0.3s ease-in-out;
-	transition: background 0.3s ease-in-out;
 }
 
-#products .products:hover {
-	color: #ffffff;
-	background: #56c553;
-}
-
-#products .products:hover h4,
-#products .products:hover .products-link {
-	color: #ffffff;
-}
-
-#products .products h4 {
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#products .products p {
-	margin-top: 25px;
-	line-height: 1.5;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#products .products .products-link {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	display: inline-block;
-	color: #f95353;
-	margin-top: 30px;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#products .products .products-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #ffffff;
-    -moz-transition: width 0.3s ease-in-out;
-	-webkit-transition: width 0.3s ease-in-out;
-	transition: width 0.3s ease-in-out;
-}
-
-#ptoducts .ptoducts .products-link:hover::after {
-    width: 100%;
+#products .subtitle {
+	margin-top: 10px;
 }
 
 /**********************
@@ -1529,10 +1442,13 @@ RESPONSIVE
 		margin-top: 0px;
 	}
 
+	#products>.container {
+		padding: 0 20px;
+	}
+
 	#products>.container>.row>div {
 		margin-top: 0px;
 	}
-
 
 	/**********************
 	SERVICES SECTION
