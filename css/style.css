@@ -3,7 +3,7 @@ DEFAULT
 ***********************/
 
 body {
-	padding-top: 85px;
+	padding-top: 53px;
 	font-family: 'Lora', serif;
 	font-size: 15px;
 	color: #9d9d9d;
@@ -212,7 +212,7 @@ NAVIGATION
 ***********************/
 
 #main-navigation.navbar {
-	min-height: 85px;
+	min-height: 53px;
 	text-transform: uppercase;
 	line-height: 1;
 	margin-bottom: 0;
@@ -224,8 +224,8 @@ NAVIGATION
 }
 
 #main-navigation .navbar-brand {
-	height: 85px;
-	padding: 26px 25px 26px;
+	height: 53px;
+	padding: 10px 25px 10px;
 }
 
 #main-navigation .navbar-brand img {
@@ -236,7 +236,7 @@ NAVIGATION
 	font-family: sans-serif;
 	font-size: 12px;
 	color: #ffffff;
-	padding: 32px 25px 33px;
+	padding: 16px 25px 17px;
 }
 
 #main-navigation.navbar-default .navbar-nav>li>a:focus, 
@@ -258,8 +258,8 @@ NAVIGATION
 
 #main-navigation .navbar-toggle {
 	background: transparent;
-	margin-top: 26px;
-	margin-bottom: 26px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border: none;
 	border-radius: 0;
 }
@@ -1343,7 +1343,7 @@ RESPONSIVE
 	NAVIGATION
 	***********************/
 	.navbar-default .navbar-nav>li>a {
-		padding: 32px 15px 33px;
+		padding: 16px 15px 16px;
 	}
 
 	#main-navigation .navbar-form .search-input {
@@ -1397,7 +1397,7 @@ RESPONSIVE
 	NAVIGATION
 	***********************/
 	.navbar-default .navbar-nav>li>a {
-		padding: 15px 15px 15px 27px;
+		padding: 9px 15px 9px 27px;
 		text-align: center;
 	}
 
