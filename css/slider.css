@@ -74,11 +74,20 @@ Slider
   background-size: cover;
 }
 .cd-slider .content {
-  padding: 30px;
+  padding: 50px;
   color: #ffffff;
   background-color: #767070;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.cd-slider li:nth-of-type(2) .content {
+  background-color: #ccd0c1;
+}
+.cd-slider li:nth-of-type(3) .content {
+  background-color: #f3b96c;
+}
+.cd-slider li:nth-of-type(4) .content {
+  background-color: #f46c6a;
 }
 .cd-slider .light-bg {
   color: rgba(0, 0, 0, 0.6);
@@ -97,15 +106,6 @@ Slider
 }
 .no-touch .cd-slider .btn:hover {
   background: rgba(0, 0, 0, 0.6);
-}
-.cd-slider li:nth-of-type(2) .content {
-  background-color: #ccd0c1;
-}
-.cd-slider li:nth-of-type(3) .content {
-  background-color: #f3b96c;
-}
-.cd-slider li:nth-of-type(4) .content {
-  background-color: #f46c6a;
 }
 .cd-slider h2 {
   font-size: 2.2rem;
@@ -206,7 +206,7 @@ Slider
 }
 @media only screen and (min-width: 1170px) {
   .cd-slider .content {
-    padding: 0 90px;
+    padding: 0 120px;
   }
   .cd-slider h2 {
     font-weight: 300;
