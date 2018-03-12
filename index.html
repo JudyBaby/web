@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 
 <body>
@@ -61,116 +60,43 @@
 
 	<main>
 
-			<section id="slider">
-				<!-- Section title -->
-				<h1 class="sr-only">广告轮播</h1>
-				<!-- Slider -->
-				<div class="cd-slider-wrapper">
-					<ul class="cd-slider">
-						<li class="is-visible">
-							<div class="cd-half-block image"></div>
-
-							<div class="cd-half-block content">
-								<div>
-									<h2>Slide Number 1</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
-									</p>
-								</div>
-							</div>
-						</li> <!-- .cd-half-block.content -->
-
-						<li>
-							<div class="cd-half-block image"></div>
-
-							<div class="cd-half-block content light-bg">
-								<div>
-									<h2>Slide Number 2</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
-									</p>
-								</div>
-							</div> <!-- .cd-half-block.content -->
-						</li>
-
-						<li>
-							<div class="cd-half-block image"></div>
-
-							<div class="cd-half-block content">
-								<div>
-									<h2>Slide Number 3</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
-									</p>
-								</div>
-							</div> <!-- .cd-half-block.content -->
-						</li>
-
-						<li>
-							<div class="cd-half-block image"></div>
-
-							<div class="cd-half-block content">
-								<div>
-									<h2>Slide Number 4</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
-									</p>
-								</div>
-							</div> <!-- .cd-half-block.content -->
-						</li>
-					</ul> <!-- .cd-slider -->
-				</div> <!-- .cd-slider-wrapper -->
-			</section><!-- slider section -->
-
-		<section id="contact">
-
+		<section id="home">
 			<!-- Section title -->
-			<h1 class="sr-only">Follow US</h1>
-
-			<div class="container">
-				<div class="row contact-holder">
-
-					<div class="col-md-3 col-xs-3">
-						<div class="contact-info">
-							<a href="#">
-								<img class="icon" src="img/svg/wechat.svg" alt="公众号">
-								<span class="data">微信公众号</span>
-							</a>
-						</div> <!-- /.contact-info -->
+			<h1 class="sr-only">Carousel</h1>
+			<div id="myCarousel" class="carousel slide">
+      			<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"</li>
+				</ol>
+				<div class="carousel-inner">
+					<!-- 1 -->
+					<div class="item active" style="background:#223240;">
+						<a href="#">
+					    	<img src="img/item1.jpg" alt="first img">
+					    </a>
 					</div>
 
-					<div class="col-md-3 col-xs-3">
-						<div class="contact-info">
-							<a href="#">
-								<img class="icon" src="img/svg/wechat.svg" alt="微信">
-								<span class="data">微信个人号</span>
-							</a>
-						</div> <!-- /.contact-info -->
+					<!-- 2 -->
+					<div class="item" style="background:#F5E4DC;">
+					    <img src="img/item2.jpg" alt="second img">
 					</div>
 
-					<div class="col-md-3 col-xs-3">
-						<div class="contact-info">
-							<a href="#">
-								<img class="icon" src="img/svg/weibo.svg" alt="微博">
-								<span class="data">微博</span>
-							</a>
-						</div> <!-- /.contact-info -->
+					<!-- 3 -->
+					<div class="item" style="background:#DE2A2D;">
+					    <img src="img/item3.jpg" alt="third img">
 					</div>
 
-					<div class="col-md-3 col-xs-3">
-						<div class="contact-info">
-							<a href="#">
-								<img class="icon" src="img/svg/taobao.svg" alt="淘宝">
-								<span class="data">淘宝店铺</span>
-							</a>
-						</div> <!-- /.contact-info -->
+					<!-- 4 -->
+					<div class="item" style="background:#f4f4f4;">
+					    <img src="img/item7.jpg" alt="third img">
 					</div>
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</section>
+				</div>
+			</div>
+		</section><!-- home section -->
 
-		<section id="new">
-			
+		<section id="new">			
 			<div class="container">
 
 				<div class="col-md-10 col-md-offset-1">
@@ -234,6 +160,53 @@
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
 		</section><!-- about section -->
+
+		<section id="contact">
+
+			<!-- Section title -->
+			<h1 class="sr-only">Follow US</h1>
+
+			<div class="container">
+				<div class="row contact-holder">
+
+					<div class="col-md-3 col-xs-3">
+						<div class="contact-info">
+							<a href="#">
+								<img class="icon" src="img/svg/wechat.svg" alt="公众号">
+								<span class="data">公众号</span>
+							</a>
+						</div> <!-- /.contact-info -->
+					</div>
+
+					<div class="col-md-3 col-xs-3">
+						<div class="contact-info">
+							<a href="#">
+								<img class="icon" src="img/svg/wechat.svg" alt="微信">
+								<span class="data">微信</span>
+							</a>
+						</div> <!-- /.contact-info -->
+					</div>
+
+					<div class="col-md-3 col-xs-3">
+						<div class="contact-info">
+							<a href="#">
+								<img class="icon" src="img/svg/weibo.svg" alt="微博">
+								<span class="data">微博</span>
+							</a>
+						</div> <!-- /.contact-info -->
+					</div>
+
+					<div class="col-md-3 col-xs-3">
+						<div class="contact-info">
+							<a href="#">
+								<img class="icon" src="img/svg/taobao.svg" alt="淘宝">
+								<span class="data">淘宝</span>
+							</a>
+						</div> <!-- /.contact-info -->
+					</div>
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</section> <!-- contact section -->
 	</main>
 
 	<footer id="footer">
@@ -248,9 +221,7 @@
 	<script type="text/javascript" src="js/libs/modernizr.mq.js"></script>
 	<script type="text/javascript" src="js/libs/mixitup.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- Slider -->
-	<script src="js/slider/slider/jquery.mobile.custom.min.js"></script>
-	<script src="js/slider/main.js"></script> <!-- Resource jQuery -->
+
 	<!-- Custom JS -->
 	<script type="text/javascript" src="js/video.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
