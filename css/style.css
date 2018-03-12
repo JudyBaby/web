@@ -337,35 +337,8 @@ HOME SECTION
 
 /****** carousel *****/
 
-.carousel {
-	width: 100%;
-	height: 100%;
-}
-
-.carousel .item {
-	background: #f6f6f6;
-}
-
 .carousel .item img{
 	margin: 0 auto;
-}
-
-.carousel .item p.caption {
-	font-size: 30px;
-	padding: 50px;
-	top: 20%;
-	-webkit-transform: translateY(20%);
-	-ms-transform: translateY(20%);
-	transform: translateY(20%);
-}
-
-.carousel-caption p {
-	margin: 52px auto 0;
-	display: block;
-}
-
-.carousel-caption .btn-default {
-	margin-top: 58px;
 }
 
 /**********************
@@ -799,6 +772,7 @@ RESPONSIVE
 	.grid-item.-width5 {
 		width: 50%;
 	}
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -907,7 +881,6 @@ RESPONSIVE
 		margin: 5px auto 0;
 		text-align: center;
 	}
-
 }
 
 @media only screen and (max-width: 479px) {
@@ -929,5 +902,4 @@ RESPONSIVE
 	.skills-container > .skill > .percent {
 		font-size: 15px;
 	}
-
 }
