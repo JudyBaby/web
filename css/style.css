@@ -630,11 +630,11 @@ CONTACT US SECTION
 }
 
 #contact h2.section-title{
-	color: #333333;
+	color: #88a098;
 }
 
 #contact .title-content .subtitle {
-	color: #666666;
+	color: #88a098;
 }
 .row.contact-holder  {
 	margin-top: 60px;
@@ -699,7 +699,7 @@ FOOTER SECTION
 ***********************/
 
 #footer {
-	padding: 30px 0 20px;
+	padding: 25px 0 20px;
 	background: #f4f4f4;
 }
 
