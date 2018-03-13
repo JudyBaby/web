@@ -3,7 +3,7 @@ DEFAULT
 ***********************/
 
 body {
-	padding-top: 53px;
+	padding-top: 73px;/*53*/
 	font-family: 'Lora', sans-serif;
 	font-size: 15px;
 	color: #9d9d9d;
@@ -341,6 +341,9 @@ HOME SECTION
 
 .carousel .item img{
 	margin: 0 auto;
+	border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
 }
 
 
@@ -594,9 +597,10 @@ ABOUT US SECTION
 ***********************/
 
 #about {
-	min-height: 700px;
+	min-height: 600px;
 	background-color: #7eb2d2;
-	background: url(../img/about_us_bg.jpg) no-repeat;
+	background: url(../img/about_us_bg.jpg) center no-repeat;
+	background-size: cover;
 }
 
 #about .title-content {
@@ -610,24 +614,30 @@ ABOUT US SECTION
 	color: #056296;
 }
 
+#about p {
+	line-height: 2.5em;
+}
 
 /**********************
 CONTACT US SECTION
 ***********************/
 
 #contact {
-	margin-top: -214px;
-	padding: 40px 0;
-	background: rgba(0,0,0,0.1);
-	color: #ffffff;
+	padding: 80px 0;
+	background: #e1efeb;
+	color: #666666;
 	text-align: center;
 }
 
+#contact h2.section-title{
+	color: #333333;
+}
+
 #contact .title-content .subtitle {
-	color: #056296;
+	color: #666666;
 }
 .row.contact-holder  {
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 /****** Contact Info *****/
@@ -649,7 +659,7 @@ CONTACT US SECTION
 }
 
 .contact-info:hover .data {
-	color: #056296;
+	color: #333333;
 }
 
 /****** QR Code *****/
@@ -690,7 +700,7 @@ FOOTER SECTION
 
 #footer {
 	padding: 30px 0 20px;
-	background: #000000;
+	background: #f4f4f4;
 }
 
 #footer .copyright {
@@ -722,7 +732,13 @@ RESPONSIVE
 	.grid-item > .overlay > .content > .description {
 		font-size: 20px;
 	}
+	/**********************
+	CAROUSEL SECTION
+	***********************/
 
+	.carousel .item {
+		padding: 0 20px;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -741,6 +757,14 @@ RESPONSIVE
 
 	#main-navigation .navbar-form input {
 		width: 120px;
+	}
+
+	/**********************
+	CAROUSEL SECTION
+	***********************/
+
+	.carousel .item {
+		padding: 0 20px;
 	}
 
 	/**********************
@@ -806,6 +830,13 @@ RESPONSIVE
 		border-bottom: 1px solid #57c654;
 	}
 
+	/**********************
+	CAROUSEL SECTION
+	***********************/
+
+	.carousel .item {
+		padding: 0 20px;
+	}
 
 	/**********************
 	NEW SECTION
@@ -854,8 +885,7 @@ RESPONSIVE
 	***********************/
 
 	#contact {
-		margin-top: -207px;
-		padding: 20px 0 18px;
+		padding: 60px 0;
 	}
 
 	.contact-info .icon {
