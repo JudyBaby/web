@@ -4,7 +4,7 @@ DEFAULT
 
 body {
 	padding-top: 53px;
-	font-family: 'Lora', serif;
+	font-family: 'Lora', sans-serif;
 	font-size: 15px;
 	color: #9d9d9d;
 	line-height: 30px;
@@ -337,9 +337,14 @@ HOME SECTION
 
 /****** carousel *****/
 
+.carousel .item {
+	background-size: cover;
+}
+
 .carousel .item img{
 	margin: 0 auto;
 }
+
 
 /**********************
 NEW SECTION
@@ -474,62 +479,6 @@ SERVICES SECTION
     width: 100%;
 }
 
-/**********************
-WORKS SECTION
-***********************/
-
-#works-navigation {
-	margin: 48px auto 0;
-	text-align: center;
-}
-
-#works-navigation .navbar-nav {
-	display: inline-block;
-	float: none;
-}
-
-#works-navigation .navbar-nav>li>.filter {
-	position: relative;
-	margin: 0 15px; 
-	padding: 15px 5px;
-	background: transparent;
-	color: #55565b;
-	border: none;
-	outline: none;
-	box-shadow: none;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#works-navigation .navbar-nav>li>.filter:hover {
-	color: #f85252;
-}
-
-#works-navigation .navbar-nav>li>.filter:after {
-	content: '';
-	position: absolute;
-    display: block;
-    width: 0;
-    height: 1px;
-    left: 0;
-    bottom: 0;
-    background: #f85252;
-    -moz-transition: width 0.3s ease-in-out;
-	-webkit-transition: width 0.3s ease-in-out;
-	transition: width 0.3s ease-in-out;
-}
-
-#works-navigation .navbar-nav>li>.filter.mixitup-control-active:after, 
-#works-navigation .navbar-nav>li>.filter.mixitup-control-active:hover:after, 
-#works-navigation .navbar-nav>li>.filter.mixitup-control-active:focus:after {
-	 width: 100%;
-}
-
-.works-container {
-	margin-top: 58px;
-}
-
 /***** GRID *****/
 
 .grid {
@@ -647,33 +596,35 @@ ABOUT US SECTION
 ***********************/
 
 #about {
-	min-height: 950px;
-	background-color: #324651;
-	background: url(../img/about_us_bg.jpg) center no-repeat;
-	background-size: cover;
+	min-height: 700px;
+	background-color: #7eb2d2;
+	background: url(../img/about_us_bg.jpg) no-repeat;
 }
 
 #about .title-content {
 	color: #ffffff;
 	font-size: 18px;
-	margin-top: 100px;
+	margin-top: 80px;
 }
+
+#about .title-content .subtitle {
+	font-size: 18px;
+	color: #056296;
+}
+
 
 /**********************
 CONTACT US SECTION
 ***********************/
 
 #contact {
-	padding: 20px 0;
-	background: #eeeeee;
-	color: #55565b;
+	margin-top: -121px;
+	padding: 40px 0;
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
 	text-align: center;
 }
 /****** Contact Info *****/
-
-#contact .row.contact-holder {
-	margin-top: 0px;
-}
 
 .contact-info {
 	display: inline-block;
@@ -683,16 +634,48 @@ CONTACT US SECTION
 
 .contact-info .icon {
 	margin-right: 10px;
-	height: 30px;
+	height: 40px;
 }
 
 .contact-info .data {
-	font-family: 'Montserrat', sans-serif;
+	font-family: sans-serif;
 	font-size: 14px;
 }
 
 .contact-info:hover .data {
-	color: #999999;
+	color: #056296;
+}
+
+/****** QR Code *****/
+#lean_overlay { 
+	position: fixed; 
+	z-index: 100; 
+	top: 0px; 
+	left: 0px; 
+	height: 100%; 
+	width: 100%; 
+	background: #000; 
+	display: none; 
+}
+
+#wechat-modal,#download-modal {
+    width: 21em;
+    height: 21em;
+    padding: 0.5em;
+    display: none;
+
+    background: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+#wechat-modal img,#download-modal img {
+    width: 20em;
+    height: 20em;
 }
 
 /**********************
@@ -700,7 +683,7 @@ FOOTER SECTION
 ***********************/
 
 #footer {
-	padding: 25px 0;
+	padding: 30px 0 20px;
 	background: #000000;
 }
 
@@ -709,7 +692,7 @@ FOOTER SECTION
 	font-size: 12px;
 	text-align: center;
 	font-weight: 100;
-	color: #333;
+	color: #666;
 }
 
 
@@ -855,10 +838,9 @@ RESPONSIVE
 	ABOUT US SECTION
 	***********************/
 
-	#about .title-content p,
-	#about .title-content .subtitle {
-		font-size: 15px;
-		text-shadow: 1px 1px 1px #161718;
+	#about .title-content p {
+		font-size: 18px;
+		/*text-shadow: 1px 1px 1px #161718;*/
 	}
 
 
@@ -868,7 +850,8 @@ RESPONSIVE
 	}*/
 
 	#contact {
-	padding: 20px 0 18px;
+		margin-top: -113px;
+		padding: 20px 0 18px;
 	}
 
 	.contact-info .icon {
@@ -894,12 +877,5 @@ RESPONSIVE
 	.grid-item.-width4,
 	.grid-item.-width5 {
 		width: 100%;
-	}
-
-	/**********************
-	SKILLS SECTION
-	***********************/
-	.skills-container > .skill > .percent {
-		font-size: 15px;
 	}
 }
